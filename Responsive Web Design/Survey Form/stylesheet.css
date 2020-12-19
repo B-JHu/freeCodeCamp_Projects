@@ -1,0 +1,92 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    background: linear-gradient(
+        60deg,
+        hsla(238, 70%, 30%, 0.6) 0%,
+        hsla(202, 80%, 61%, 0.4) 100%
+      ) no-repeat center center fixed, url(https://www.wiki-to-yes.org/dl434?display) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". survey .";
+}
+
+main {
+    grid-area: survey;
+    /*#a32b16ee*/
+    background-color: hsla(238, 70%, 20%, 0.922);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+form, input:not([type="radio"]):not([type="checkbox"]), select {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+textarea {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    height: 5rem;
+
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+hr {
+    margin-top: 1rem;
+}
+
+#description {
+    margin-bottom: 2rem;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+form > label:not(:first-child) {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+div {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+button {
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    width: 85%;
+    padding: 0.3rem;
+
+    font-size: 1.3rem;
+    color: white;
+    background-color: hsl(118, 81%, 20%);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
