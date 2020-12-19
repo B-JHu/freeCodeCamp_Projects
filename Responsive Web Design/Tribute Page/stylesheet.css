@@ -1,0 +1,102 @@
+/* html {
+    Set for reference using 'rem'
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: #F0F0F0;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 0.2rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
+    text-align: center;
+    width: 50%;
+  }
+  
+  #title {
+    text-align: center;
+  }
+
+  #img-caption {
+      margin: 0.25rem auto 0.3rem auto;
+  } */
+
+html {
+  /*Set for reference using 'rem'*/
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #E6E6E6;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem auto auto;
+  grid-template-areas: "header header"
+                       "picture text"
+                       ". text";
+  column-gap: 2em;
+}
+
+img {
+  width: 400px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin: 0.2rem auto 0.2rem auto;
+}
+
+#title {
+  grid-area: header;
+  
+  text-align: center;
+}
+
+#img-div {
+  grid-area: picture;
+
+  background: white;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px darkgray;
+}
+
+#img2 {
+  margin-top: 5rem;
+}
+
+#tribute-info {
+  grid-area: text;
+}
+
