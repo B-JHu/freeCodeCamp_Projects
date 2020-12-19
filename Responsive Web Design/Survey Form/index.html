@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+        <main>
+            <h1 id="title">Newspaper Survey Form</h1>
+            <p id="description">Thank you for taking your time to give feedback to us!</p>
+
+            <form id="survey-form">
+                <label id="name-label" for="name">Your name:</label><br/>
+                    <input id="name" name="name" type="text" placeholder="Firstname Lastname" required><br/> 
+                <label id="email-label" for="email">Your E-mail-address:</label><br/>
+                    <input id="email" name="email" type="email" placeholder="example@provider.com" required><br/>
+                <label id="number-label" for="number">Your age:</label><br/>
+                    <input id="number" name="age" type="number" min="0" max="199" placeholder="Integer"><br/>
+
+                <label for="dropdown">How regulary do you read our newspaper?</label><br/>
+                    <select id="dropdown">
+                        <option value="selectValue" disabled selected>Select an option</option>
+                        <option value="everyday">everyday</option>
+                        <option value="3to5">3 - 5x per week</option>
+                        <option value="1to2">1 - 2x per week</option>
+                        <option value="lessThan1">less than 1x per week</option>
+                    </select><br/>
+
+                <hr>
+
+                <label>Do you want to praise or critique us?<br/>
+                    <label for="yes"><input type="radio" name="critiqueOrPraise" id="praise" value="praise"> Praise</label>
+                    <label for="no"><input type="radio" name="critiqueOrPraise" id="critique" value="critique"> Critique</label>
+                </label><br/>
+
+                <div>What do you want to critique/praise us for?<br/>
+                    <input type="checkbox" id="writingStyle" value="writingStyle">
+                    <label for="writingStyle">Style of writing</label>
+                    <input type="checkbox" id="topicSelection" value="topicSelection">
+                    <label for="topicSelection">Selection of topics</label>
+                    <input type="checkbox" id="pictures" value="pictures">
+                    <label for="pictures">Pictures</label>
+                    <input type="checkbox" id="other" value="other">
+                    <label for="other">Other (comment below)</label><br/>
+                </div>
+                <hr>
+
+                <div for="comments">Your extra comments/thoughts:</div>
+                <textarea id="comments" placeholder="Write your extra feedback here."></textarea><br/>
+
+                <button type="submit" id="submit">Submit!</button>
+            </form>
+        </main>
+    </body>
+</html>
