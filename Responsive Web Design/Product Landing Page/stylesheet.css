@@ -1,0 +1,193 @@
+html {
+    font-size: 15px;
+    height: 100%;
+}
+
+@media (max-width: 50rem) {
+    body {
+        height: 100%;
+    
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Helvetica Neue', Arial, sans-serif;
+    
+        background-color: #f3f3f3;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "site"
+                             "footer";
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f3f3f3;
+    }
+
+    header > img {
+        max-width: 290px;
+    }
+
+    #price-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #price-wrapper > * {
+        background-color: white;
+        margin: 1rem;
+        padding: 0.5rem;
+        border: 1px solid grey;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        width: 15rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    body {
+        height: 100%;
+    
+        font-size: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Helvetica Neue', Arial, sans-serif;
+    
+        background-color: #f3f3f3;
+    
+        display: grid;
+        grid-template-columns: 1fr 1.8fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: ". site ."
+                             ". footer .";
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    
+        display: flex;
+        justify-content: space-between;
+        background-color: #f3f3f3;
+    }
+
+    #price-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #price-wrapper > * {
+        background-color: white;
+        margin: 1rem;
+        padding: 0.5rem;
+        border: 1px solid grey;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        width: 15rem;
+    }
+}
+
+#content {
+    grid-area: site;
+    margin-top: 80px;
+}
+
+#content > * {
+    margin: 0 auto;
+}
+
+footer {
+    grid-area: footer;
+
+    display: flex;
+
+    background-color: #ccc;
+    margin-top: 1rem;
+}
+
+footer > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer > *:first-child {
+    margin-right: 2.5rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav > div {
+    padding: 0.7rem;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+#prices {
+    margin-top: 1rem;
+}
+
+#price-wrapper h3, #price-wrapper h4 {
+    margin: 0.35rem;
+    text-align: center;
+}
+
+#price-wrapper button {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+
+    background-color: rgb(242, 169, 34);
+    border: none;
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+
+#input-wrapper {
+    display: flex;
+
+    justify-content: center;
+}
+
+#input-wrapper > input[type="email"] {
+    font-size: 1.1rem;
+    width: 35%;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+#input-wrapper > input[type="submit"] {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(242, 169, 34);
+    margin-left: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
