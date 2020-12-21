@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header>
+                <h2>Generic documentation page</h2>
+            </header>
+
+            <a href="#Introduction_to_the_project" class="nav-link">Introduction to the project</a>
+            <a href="#Basic_structure" class="nav-link">Basic structure</a>
+            <a href="#Current_working_points" class="nav-link">Current working points</a>
+            <a href="#Method_documentation" class="nav-link">Method documentation</a>
+            <a href="#References_for_used_technologies" class="nav-link">References for used technologies</a>
+        </nav>
+
+        <main id="main-doc">
+            <h1>Generic project - A project to do something</h1>
+
+            <section class="main-section" id="Introduction_to_the_project">
+                <header>
+                    <h2>Introduction to the project</h2>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum elit in aliquet lobortis. Curabitur sollicitudin sapien in felis gravida, vitae suscipit ipsum mattis. Nulla facilisi. Ut et orci ac purus auctor sodales at vel urna. Quisque eu aliquet turpis, in imperdiet lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer quis magna ut arcu mollis gravida. Aliquam interdum finibus metus, vel varius sem hendrerit vel. Integer faucibus quam nibh, quis semper sapien sagittis quis. In tristique risus quis felis accumsan euismod sed eu turpis. Fusce lobortis fringilla libero, sed porttitor sem posuere eget. Mauris sit amet porttitor ante.</p>
+                <p>Ut nec augue dolor. Mauris cursus molestie vestibulum. Proin finibus felis nec erat viverra porttitor. Ut vel aliquam ipsum, in condimentum velit. Vivamus in felis odio. Nam tincidunt quam mauris, ut pulvinar nibh pharetra eget. Fusce pulvinar dolor eu dolor iaculis consequat. Nunc ullamcorper dignissim bibendum. Nulla congue tempus aliquet. Integer feugiat elementum nisi in mattis. Vestibulum volutpat vel erat quis varius. Ut ac varius enim, quis posuere ex. Nulla augue arcu, interdum id efficitur in, porta sed diam. Nunc tempor placerat purus ac imperdiet.</p>
+                <p>Nam eros lacus, aliquam vitae enim at, commodo tincidunt metus. Fusce vulputate arcu at risus venenatis, id sollicitudin orci eleifend. Praesent ultricies, neque in iaculis vulputate, metus nisl sollicitudin justo, quis viverra nulla mi quis lacus. Nulla pellentesque ornare volutpat. Proin vel fermentum lorem. Nunc id hendrerit augue, vitae mattis nunc. Curabitur ut porttitor orci. Integer vehicula mi sed arcu tincidunt hendrerit. Phasellus facilisis velit ut nisi consectetur, at tristique quam dapibus. Donec varius molestie nulla tincidunt lobortis. Donec auctor quam ac velit volutpat sagittis.</p>
+            </section>
+
+            <section class="main-section" id="Basic_structure">
+                <header>
+                    <h2>Basic structure</h2>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum elit in aliquet lobortis. Curabitur sollicitudin sapien in felis gravida, vitae suscipit ipsum mattis. Nulla facilisi. Ut et orci ac purus auctor sodales at vel urna. Quisque eu aliquet turpis, in imperdiet lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer quis magna ut arcu mollis gravida. Aliquam interdum finibus metus, vel varius sem hendrerit vel. Integer faucibus quam nibh, quis semper sapien sagittis quis. In tristique risus quis felis accumsan euismod sed eu turpis. Fusce lobortis fringilla libero, sed porttitor sem posuere eget. Mauris sit amet porttitor ante.</p>
+                <img src="https://www.researchgate.net/profile/Ambrosio_Toval/publication/221269289/figure/fig1/AS:305374977642501@1449818476345/Example-of-a-UML-Class-Diagram.png" alt="A generic UML-diagram">
+                <p>Some notes:</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Proin finibus felis nec erat viverra porttitor. Ut vel aliquam ipsum, in condimentum velit. Vivamus in felis odio. Nam tincidunt quam mauris, ut pulvinar nibh pharetra eget.</li>
+                    <li>Nulla congue tempus aliquet.</li>
+                    <li>Pellentesque risus neque, hendrerit et diam sed, pretium tristique tortor. Nunc viverra at quam eu iaculis.</li>
+                    <li>In congue et magna vel tempus. Pellentesque viverra, ligula vel iaculis maximus, lacus mauris aliquet augue, ut ultricies odio dui in tellus.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Current_working_points">
+                <header>
+                    <h2>Current working points</h2>
+                </header>
+                    <h3>Working point no. 1</h3>
+                        <code><pre>public static void main(String[] args) {
+
+    int dividend = 25, divisor = 4;
+                              
+    int quotient = dividend / divisor;
+    int remainder = dividend % divisor;
+                              
+    System.out.println("Quotient = " + quotient);
+    System.out.println("Remainder = " + remainder);
+}</pre></code></li>
+                    <h3>Working point no. 2</h3>
+                        <code><pre>public static void main(String[] args) {
+                              
+    // year to be checked
+    int year = 1996;
+    boolean leap = false;
+                              
+    // if the year is divided by 4
+    if (year % 4 == 0) {
+                              
+        // if the year is century
+        if (year % 100 == 0) {
+                              
+            // if year is divided by 400
+            // then it is a leap year
+            if (year % 400 == 0) {
+                leap = true;
+            } else {
+                leap = false;
+            }
+                              
+        // if the year is not century
+        } else {
+            leap = true;
+        }
+                            
+    } else {
+        leap = false;
+    }
+
+    if (leap) {
+        System.out.println(year + " is a leap year.");
+    } else {
+        System.out.println(year + " is not a leap year.");
+}</pre></code></li>
+                    <h3>Working point no. 3</h3>
+                        <code><pre>public static void main(String[] args) {
+                            
+    Scanner reader = new Scanner(System.in);
+    System.out.print("Enter two numbers: ");
+                            
+    // nextDouble() reads the next double from the keyboard
+    double first = reader.nextDouble();
+    double second = reader.nextDouble();
+                            
+    System.out.print("Enter an operator (+, -, *, /): ");
+    char operator = reader.next().charAt(0);
+                            
+    double result;
+                            
+    switch (operator) {
+        case '+':
+            result = first + second;
+            break;
+                            
+        case '-':
+            result = first - second;
+            break;
+                            
+        case '*':
+            result = first * second;
+            break;
+                            
+        case '/':
+            result = first / second;
+            break;
+                            
+        // operator doesn't match any case constant (+, -, *, /)
+        default:
+            System.out.printf("Error! operator is not correct");
+            return;
+    }
+                            
+    System.out.println(first + " " + operator + " " + second + " = " + result);
+}</pre></code></li>
+            </section>
+
+            <section class="main-section" id="Method_documentation">
+                <header>
+                    <h2>Method documentation</h2>
+                </header>
+            
+                <p>Here some placeholder text to explain that in the following section the methods of the project are documented.</p>
+                <code><pre>public int[] fibonacciSequence(int length)</pre></code>
+                <p>Returns an array of the Fibonacci-sequence with <em>length</em> entries.</p>
+                <code><pre>public int factorial(int number)</pre></code>
+                <p>Computes the factorial of the given number.</p>
+                <code><pre>public String encrypt(String stringToEncrypt, String key)</pre></code>
+                <p>Encrypts the given string with the given key using the <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES symmetrical block-cypher</a> (256 bit).</p>
+                <code><pre>public String decrypt(String cypherText, String key)</pre></code>
+                <p>Decrypts the given cypher with the given key. The input <em>cypherText</em> is expected to be encrypted with 256-bit <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a>.</p>
+            </section>
+
+            <section class="main-section" id="References_for_used_technologies">
+                <header>
+                    <h2>References for used technologies</h2>
+                </header>
+
+                <p><a href="https://spring.io/projects/spring-framework">Spring</a> - Java-framework</p>
+                <p><a href="https://deeplearning4j.org/">DeepLearning for Java</a> - Java machine-learing library</p>
+            </section>
+
+        </main>
+    </body>
+</html>
